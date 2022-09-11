@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom';
 // JavaScript plugin that hides or shows a component based on your scroll
 import Headroom from 'headroom.js';
 // reactstrap components
+import 'assets/css/style.css';
 import {
   Button,
   UncontrolledCollapse,
@@ -227,10 +228,17 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                 </Nav>
                 <Button
-                  className="btn-icon btn-2"
+                  className="btn-icon btn-2 toggle-btn"
                   color="primary"
                   type="button"
-                  onClick={() => onChangeMode()}>
+                  onClick={() => onChangeMode()}
+                  style={{
+                    width: '50px',
+                    height: '50px',
+                    backgroundColor: 'transparent',
+                    borderColor: 'transparent',
+                    color: 'white',
+                  }}>
                   <span className="btn-inner--icon">
                     <i class="fa fa-moon-o"></i>
                   </span>

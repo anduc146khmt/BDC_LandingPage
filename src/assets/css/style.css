@@ -1,0 +1,13 @@
+.hero__image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+@media screen and (max-width: 500px) {
+  .toggle-btn > .btn-inner--icon {
+    color: black;
+    border-radius: 50%;
+    border-color: transparent;
+  }
+  
+}
