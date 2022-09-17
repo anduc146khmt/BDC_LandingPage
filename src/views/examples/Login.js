@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
 import {
@@ -31,12 +31,12 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
-} from "reactstrap";
+  Col,
+} from 'reactstrap';
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import DemoNavbar from 'components/Navbars/Navbar.js';
+import SimpleFooter from 'components/Footers/SimpleFooter.js';
 
 class Login extends React.Component {
   componentDidMount() {
@@ -73,13 +73,12 @@ class Login extends React.Component {
                           className="btn-neutral btn-icon"
                           color="default"
                           href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
+                          onClick={(e) => e.preventDefault()}>
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
                               src={
-                                require("assets/img/icons/common/github.svg")
+                                require('assets/img/icons/common/github.svg')
                                   .default
                               }
                             />
@@ -90,13 +89,12 @@ class Login extends React.Component {
                           className="btn-neutral btn-icon ml-1"
                           color="default"
                           href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
+                          onClick={(e) => e.preventDefault()}>
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
                               src={
-                                require("assets/img/icons/common/google.svg")
+                                require('assets/img/icons/common/google.svg')
                                   .default
                               }
                             />
@@ -142,8 +140,7 @@ class Login extends React.Component {
                           />
                           <label
                             className="custom-control-label"
-                            htmlFor=" customCheckLogin"
-                          >
+                            htmlFor=" customCheckLogin">
                             <span>Remember me</span>
                           </label>
                         </div>
@@ -151,8 +148,7 @@ class Login extends React.Component {
                           <Button
                             className="my-4"
                             color="primary"
-                            type="button"
-                          >
+                            type="button">
                             Sign in
                           </Button>
                         </div>
@@ -164,8 +160,7 @@ class Login extends React.Component {
                       <a
                         className="text-light"
                         href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
+                        onClick={(e) => e.preventDefault()}>
                         <small>Forgot password?</small>
                       </a>
                     </Col>
@@ -173,8 +168,7 @@ class Login extends React.Component {
                       <a
                         className="text-light"
                         href="#pablo"
-                        onClick={(e) => e.preventDefault()}
-                      >
+                        onClick={(e) => e.preventDefault()}>
                         <small>Create new account</small>
                       </a>
                     </Col>

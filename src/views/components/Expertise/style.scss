@@ -1,0 +1,26 @@
+.service {
+  background-color: #f8f9ff;
+  margin: 30px 0;
+}
+.service__text {
+  padding: 50px 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.service__text h1 {
+  color: #2b60f8;
+  font-weight: bold;
+  font-size: 50px;
+}
+.container-fluid { 
+  width: 70%;
+  margin: auto;
+}
+@media screen and (max-width: 500px) {
+  .container-fluid {
+    width: 90%;
+  }
+  
+}

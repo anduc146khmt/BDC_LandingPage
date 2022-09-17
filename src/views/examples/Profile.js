@@ -15,14 +15,14 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
-import { Button, Card, Container, Row, Col } from "reactstrap";
+import { Button, Card, Container, Row, Col } from 'reactstrap';
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import DemoNavbar from 'components/Navbars/Navbar.js';
+import SimpleFooter from 'components/Footers/SimpleFooter.js';
 
 class Profile extends React.Component {
   componentDidMount() {
@@ -54,8 +54,7 @@ class Profile extends React.Component {
                 version="1.1"
                 viewBox="0 0 2560 100"
                 x="0"
-                y="0"
-              >
+                y="0">
                 <polygon
                   className="fill-white"
                   points="2560 0 2560 100 0 100"
@@ -74,23 +73,21 @@ class Profile extends React.Component {
                           <img
                             alt="..."
                             className="rounded-circle"
-                            src={require("assets/img/theme/team-4-800x800.jpg")}
+                            src={require('assets/img/theme/team-4-800x800.jpg')}
                           />
                         </a>
                       </div>
                     </Col>
                     <Col
                       className="order-lg-3 text-lg-right align-self-lg-center"
-                      lg="4"
-                    >
+                      lg="4">
                       <div className="card-profile-actions py-4 mt-lg-0">
                         <Button
                           className="mr-4"
                           color="info"
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
-                          size="sm"
-                        >
+                          size="sm">
                           Connect
                         </Button>
                         <Button
@@ -98,8 +95,7 @@ class Profile extends React.Component {
                           color="default"
                           href="#pablo"
                           onClick={(e) => e.preventDefault()}
-                          size="sm"
-                        >
+                          size="sm">
                           Message
                         </Button>
                       </div>
@@ -123,7 +119,7 @@ class Profile extends React.Component {
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Jessica Jones{" "}
+                      Jessica Jones{' '}
                       <span className="font-weight-light">, 27</span>
                     </h3>
                     <div className="h6 font-weight-300">

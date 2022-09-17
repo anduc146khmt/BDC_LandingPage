@@ -38,7 +38,7 @@ import {
 } from 'reactstrap';
 
 // core components
-import DemoNavbar from 'components/Navbars/DemoNavbar.js';
+import DemoNavbar from 'components/Navbars/Navbar.js';
 import CardsFooter from 'components/Footers/CardsFooter.js';
 
 // index page sections
@@ -49,7 +49,7 @@ class Landing extends React.Component {
     super(props);
 
     // Set initial state
-    this.state = { isDarkMode: true };
+    this.state = { isDarkMode: false };
 
     // Binding this keyword
     this.updateState = this.updateState.bind(this);
@@ -61,7 +61,7 @@ class Landing extends React.Component {
   render() {
     let btnClass = this.state.isDarkMode
       ? 'shape shape-style-1 shape-dark'
-      : ' shape shape-style-1 shape-primary';
+      : ' shape shape-style-1 shape-default';
     return (
       <>
         <DemoNavbar onChangeMode={this.updateState} />

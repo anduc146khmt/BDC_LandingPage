@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
 import {
@@ -31,12 +31,12 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
-} from "reactstrap";
+  Col,
+} from 'reactstrap';
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
+import DemoNavbar from 'components/Navbars/Navbar.js';
+import SimpleFooter from 'components/Footers/SimpleFooter.js';
 
 class Register extends React.Component {
   componentDidMount() {
@@ -73,13 +73,12 @@ class Register extends React.Component {
                           className="btn-neutral btn-icon mr-4"
                           color="default"
                           href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
+                          onClick={(e) => e.preventDefault()}>
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
                               src={
-                                require("assets/img/icons/common/github.svg")
+                                require('assets/img/icons/common/github.svg')
                                   .default
                               }
                             />
@@ -90,13 +89,12 @@ class Register extends React.Component {
                           className="btn-neutral btn-icon ml-1"
                           color="default"
                           href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
+                          onClick={(e) => e.preventDefault()}>
                           <span className="btn-inner--icon mr-1">
                             <img
                               alt="..."
                               src={
-                                require("assets/img/icons/common/google.svg")
+                                require('assets/img/icons/common/google.svg')
                                   .default
                               }
                             />
@@ -146,7 +144,7 @@ class Register extends React.Component {
                         </FormGroup>
                         <div className="text-muted font-italic">
                           <small>
-                            password strength:{" "}
+                            password strength:{' '}
                             <span className="text-success font-weight-700">
                               strong
                             </span>
@@ -162,14 +160,12 @@ class Register extends React.Component {
                               />
                               <label
                                 className="custom-control-label"
-                                htmlFor="customCheckRegister"
-                              >
+                                htmlFor="customCheckRegister">
                                 <span>
-                                  I agree with the{" "}
+                                  I agree with the{' '}
                                   <a
                                     href="#pablo"
-                                    onClick={(e) => e.preventDefault()}
-                                  >
+                                    onClick={(e) => e.preventDefault()}>
                                     Privacy Policy
                                   </a>
                                 </span>
@@ -181,8 +177,7 @@ class Register extends React.Component {
                           <Button
                             className="mt-4"
                             color="primary"
-                            type="button"
-                          >
+                            type="button">
                             Create account
                           </Button>
                         </div>
