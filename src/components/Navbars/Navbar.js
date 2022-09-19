@@ -150,25 +150,32 @@ class DemoNavbar extends React.Component {
                       <span className="nav-link-inner--text">Projects</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to="/landing-page" tag={Link}>
-                        IoT
-                      </DropdownItem>
-                      <DropdownItem to="/profile-page" tag={Link}>
+                      <DropdownItem to="/home" tag={Link}>
                         Data Science
                       </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Data Engineer
+                      <DropdownItem to="/home" tag={Link}>
+                        AI
                       </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
+                      <DropdownItem to="/home" tag={Link}>
+                        Software
+                      </DropdownItem>
+                      <DropdownItem to="/home" tag={Link}>
                         System
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
-                  <NavLink to="/register-page" tag={Link}>
-                    Our Blog
+                  <NavLink to="https://docs.hpcc.vn/display/BDC/">
+                    <a
+                      href="https://docs.hpcc.vn/display/BDC/"
+                      className="navbar__blog">
+                      Our Blog
+                    </a>
                   </NavLink>
+                  {/* <NavLink to="/register-page" tag={Link}>
+                    Our Blog
+                  </NavLink> */}
                 </Nav>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavLink to="/register-page" tag={Link}>
@@ -179,7 +186,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.facebook.com/creativetim"
+                      href="https://www.facebook.com/BDCofHCMUT"
                       id="tooltip333589074"
                       target="_blank">
                       <i className="fa fa-facebook-square" />
@@ -194,7 +201,7 @@ class DemoNavbar extends React.Component {
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.instagram.com/creativetimofficial"
+                      href="https://www.youtube.com/channel/UC95gkDbiRPY17hiRWP5o5Yg"
                       id="tooltip356693867"
                       target="_blank">
                       <i className="fa fa-brands fa-youtube"></i>
@@ -208,9 +215,11 @@ class DemoNavbar extends React.Component {
                   </NavItem>
                 </Nav>
                 <NavItem className="d-none d-lg-block ml-lg-4">
-                  <Button color="info" type="button">
-                    Contact Us
-                  </Button>
+                  <NavLink to="/contact-us" tag={Link}>
+                    <Button color="info" type="button">
+                      Contact Us
+                    </Button>
+                  </NavLink>
                 </NavItem>
                 <Button
                   className="btn-icon btn-2 toggle-btn"

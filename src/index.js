@@ -29,6 +29,7 @@ import Login from 'views/examples/Login.js';
 import Profile from 'views/examples/Profile.js';
 import Register from 'views/examples/Register.js';
 import OurStory from 'views/examples/OurStory';
+import ContactUs from 'views/examples/ContactUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -56,6 +57,11 @@ root.render(
         path="/register-page"
         exact
         render={(props) => <Register {...props} />}
+      />
+      <Route
+        path="/contact-us"
+        exact
+        render={(props) => <ContactUs {...props} />}
       />
       <Redirect to="/" />
     </Switch>

@@ -37,7 +37,7 @@ const Expertise = (props) => {
             {' '}
             <Card
               image={require('assets/img/brand/DW.png')}
-              title="Data Warehouse"
+              title="MLOps"
               content="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
           </Col>
@@ -45,7 +45,7 @@ const Expertise = (props) => {
             {' '}
             <Card
               image={require('assets/img/brand/DA.png')}
-              title="Data Analytic"
+              title="Big Data Analytic"
               content="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
           </Col>
@@ -53,7 +53,7 @@ const Expertise = (props) => {
             {' '}
             <Card
               image={require('assets/img/brand/Bi.png')}
-              title="Data Visualization"
+              title="Software"
               content="Some quick example text to build on the card title and make up the bulk of the card's content."
             />
           </Col>

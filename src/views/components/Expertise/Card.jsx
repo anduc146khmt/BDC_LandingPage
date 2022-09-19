@@ -29,7 +29,9 @@ const Card = (props) => {
           style={{ padding: '10px 0', fontWeight: 'bold' }}>
           {title}
         </h4>
-        <p classname="card-text" style={{ padding: '15px', fontSize: '16px' }}>
+        <p
+          classname="card-text"
+          style={{ padding: '15px', fontSize: '16px', fontWeight: 'normal' }}>
           {content}
         </p>
         <a

@@ -25,6 +25,7 @@ import CardsFooter from 'components/Footers/CardsFooter.js';
 import Hero from '../IndexSections/Hero';
 import Intro from '../components/Intro/Intro';
 import Expertise from 'views/components/Expertise/Expertise';
+import Stat from 'views/components/Stat/Stat.jsx';
 
 class OurStory extends React.Component {
   componentDidMount() {
@@ -40,6 +41,7 @@ class OurStory extends React.Component {
           <Hero />
           <Intro />
           <Expertise />
+          <Stat />
         </main>
         <CardsFooter />
       </>

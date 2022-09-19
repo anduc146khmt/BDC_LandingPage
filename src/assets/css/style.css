@@ -3,11 +3,20 @@ img:hover {
   transform: scale(1.1);
   opacity: 0.8;
 }
+.navbar__blog:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.navbar__blog {
+  color: white;
+}
 @media screen and (max-width: 500px) {
   .toggle-btn > .btn-inner--icon {
     color: black;
     border-radius: 50%;
     border-color: transparent;
   }
-  
+  .navbar__blog { 
+    color: black;
+  }
 }
